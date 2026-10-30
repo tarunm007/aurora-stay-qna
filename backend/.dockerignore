@@ -1,0 +1,15 @@
+# TM: Exclude local environments, credentials, and development artifacts from builds.
+.env
+.env.*
+config.json
+*.pem
+*.key
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.git/
+.pytest_cache/
+*.ipynb
+# TM: The embedding model is downloaded in the image build, not copied from the host.
+huggingface/
